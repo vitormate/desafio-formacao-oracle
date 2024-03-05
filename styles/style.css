@@ -94,14 +94,21 @@ button {
     color: var(--dark-blue-300-color);
 }
 
-.content__board {
+.content__container {
     display: flex;
-    align-items: end;
-    justify-content: center;
-    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 16px;
     height: 530px;
+}
+
+.content__container__board {
+    height: 80%;
     background-color: var(--white-color);
     border-radius: 32px;
+    padding: 5%;
+    color: var(--gray-400-color);
+    font-size: 1.5rem;
 }
 
 .content__board__button {
