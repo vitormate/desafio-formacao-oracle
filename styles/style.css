@@ -94,7 +94,7 @@ button {
 }
 
 .content__container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     gap: 16px;
@@ -137,9 +137,44 @@ button {
 }
 
 .content__board__button {
-    display: none;
     margin-bottom: 16px;
     border: 1px solid var(--dark-blue-300-color);
     background-color: var(--white-color);
     color: var(--dark-blue-300-color);
+}
+
+@media (max-width: 1250px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content__section {
+        width: 90%;
+    }
+
+    .content__nouse {
+        gap: 16px;
+        padding: 2% 5%;
+        margin: 2% 5% 0% 5%;
+    }
+
+    .content__nouse__image {
+        display: none;
+    }
+
+    .content__nouse_paragraph {
+        padding: 0%;
+    }
+
+    .content__container {
+        margin: 2% 5% 0% 5%;
+    }
+
+    .content__container__board {
+        padding: 5%;
+    }
+
+    .content__board__button {
+        width: 100%;
+    }
 }
