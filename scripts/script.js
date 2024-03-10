@@ -1,4 +1,9 @@
 function criptografar() {
+    const notUseContainer = document.querySelector('.content__nouse');
+    notUseContainer.style.display = 'none';
+    const viewBoard = document.querySelector('.content__board__button');
+    viewBoard.style.display = 'block';
+
     const textarea = document.querySelector('.content__section__textarea');
 
     const text = textarea.value;
@@ -11,6 +16,11 @@ function criptografar() {
 }
 
 function descriptografar() {
+    const notUseContainer = document.querySelector('.content__nouse');
+    notUseContainer.style.display = 'none';
+    const viewBoard = document.querySelector('.content__board__button');
+    viewBoard.style.display = 'block';
+    
     const textarea = document.querySelector('.content__section__textarea');
 
     const text = textarea.value;
